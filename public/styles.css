@@ -32,6 +32,6 @@
     padding: 4px 5px;
   }
 
-  .node .is-active {
-      background-color: #31363F;
+  .is-active {
+      background-color: #31363F !important;
   }

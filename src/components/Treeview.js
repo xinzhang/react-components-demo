@@ -8,23 +8,22 @@ class TreeviewPage extends React.Component {
   constructor(props) {
       super(props);
       console.log('init state');
-
       this.state = {
         active: '',
         tree: treeData
       };
+      console.log(this.state);
+
       this.updateTree = this.updateTree.bind(this);
       this.handleChange = this.handleChange.bind(this);
       this.onClickNode = this.onClickNode.bind(this);
+      this.renderNode = this.renderNode.bind(this);
   }
 
   onClickNode(node) {
-    console.log('onclick node');
-    if (node != null) {
       this.setState({
         active: node
       });
-    }
   }
 
   renderNode(node) {
