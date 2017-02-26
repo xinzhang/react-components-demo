@@ -1,0 +1,37 @@
+.tree {
+  position: fixed;
+  top: 50px;
+  left: 0;
+  bottom: 0;
+  width: 300px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background-color: #21252B;
+}
+
+
+.inspector {
+  margin-left: 400px;
+  font-family: Menlo;
+}
+
+  .m-node .inner {
+    color: #9DA5B4;
+    font-family: Menlo;
+  }
+
+  .m-node .node {
+    display: inline-block;
+    width: 100%;
+    padding: 4px 5px;
+  }
+
+  .node {
+    display: inline-block;
+    width: 100%;
+    padding: 4px 5px;
+  }
+
+  .node .is-active {
+      background-color: #31363F;
+  }

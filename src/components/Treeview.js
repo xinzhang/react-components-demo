@@ -2,25 +2,38 @@ import React, { Component } from 'react';
 import Tree from 'react-ui-tree';
 import treeData from './treeData';
 
+var cx = require('classnames');
+
 class TreeviewPage extends React.Component {
   constructor(props) {
       super(props);
-      console.log(treeData);
+      console.log('init state');
+
       this.state = {
-        action: null,
+        active: '',
         tree: treeData
       };
+      this.updateTree = this.updateTree.bind(this);
+      this.handleChange = this.handleChange.bind(this);
+      this.onClickNode = this.onClickNode.bind(this);
   }
 
   onClickNode(node) {
-    this.setState({
-      active: node
-    });
+    console.log('onclick node');
+    if (node != null) {
+      this.setState({
+        active: node
+      });
+    }
   }
 
   renderNode(node) {
       return (
-        <span>
+        <span
+          className={cx('node', {
+            'is-active': node !== null && node === this.state.active
+          })}
+          onClick={this.onClickNode}>
           {node.module}
         </span>
       );
@@ -49,14 +62,18 @@ class TreeviewPage extends React.Component {
     }
 
     handleChange(tree) {
+      console.log(tree);
+
       this.setState({
         tree: tree
       });
     }
 
     updateTree() {
+
       var tree = this.state.tree;
       tree.children.push({module: 'test'});
+
       this.setState({
         tree: tree
       });
