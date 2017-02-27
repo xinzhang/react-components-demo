@@ -12,15 +12,14 @@ class TreeviewPage extends React.Component {
         active: '',
         tree: treeData
       };
-      console.log(this.state);
 
       this.updateTree = this.updateTree.bind(this);
       this.handleChange = this.handleChange.bind(this);
-      this.onClickNode = this.onClickNode.bind(this);
       this.renderNode = this.renderNode.bind(this);
   }
 
   onClickNode(node) {
+      console.log(node);
       this.setState({
         active: node
       });
@@ -32,13 +31,15 @@ class TreeviewPage extends React.Component {
           className={cx('node', {
             'is-active': node !== null && node === this.state.active
           })}
-          onClick={this.onClickNode}>
+          onClick={()=>this.onClickNode(node)}>
           {node.module}
         </span>
       );
     }
 
     render() {
+      console.log('render refreshed');
+      console.log(this.state);
       return (
         <div>
           <div className="tree">
@@ -61,8 +62,6 @@ class TreeviewPage extends React.Component {
     }
 
     handleChange(tree) {
-      console.log(tree);
-
       this.setState({
         tree: tree
       });
