@@ -6,6 +6,7 @@ import ButtonComponent from './components/Button';
 import HomeComponent from './components/Home';
 import TreeviewPage from './components/Treeview';
 import GridPage from './components/Grid';
+import CloudinaryPage from './components/Cloudinary';
 
 export default (
   <Route path="/" component={AppComponent}>
