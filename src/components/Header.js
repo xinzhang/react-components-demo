@@ -20,7 +20,7 @@ class HeaderComponent extends Component {
               <li><a href="/button">Buttons</a></li>
               <li><a href="/grid">Grid</a></li>
               <li><a href="/treeview">Treeview</a></li>
-              <li><a href="/support">Support</a></li>
+              <li><a href="/cloudinary">cloudinary</a></li>
               <li><a href="https://github.com/react-bootstrap/react-bootstrap" target="_blank">GitHub</a></li>
             </ul>
           </div>

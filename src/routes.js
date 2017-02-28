@@ -13,5 +13,6 @@ export default (
     <Route path="button" component={ButtonComponent} />
     <Route path="treeview" component={TreeviewPage} />
     <Route path="grid" component={GridPage} />
+    <Route path="cloudinary" component={CloudinaryPage} />
   </Route>
 );
