@@ -20,7 +20,8 @@ class HeaderComponent extends Component {
               <li><a href="/button">Buttons</a></li>
               <li><a href="/grid">Grid</a></li>
               <li><a href="/treeview">Treeview</a></li>
-              <li><a href="/cloudinary">Cloudinary</a></li>              
+              <li><a href="/treeSelect">TreeSelect</a></li>
+              <li><a href="/cloudinary">Cloudinary</a></li>
             </ul>
           </div>
         </div>

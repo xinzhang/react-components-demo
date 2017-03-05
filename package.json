@@ -7,9 +7,11 @@
   },
   "dependencies": {
     "classnames": "^2.2.5",
+    "rc-tree-select": "^1.9.0",
     "react": "^15.4.2",
     "react-addons-shallow-compare": "^15.4.2",
     "react-bootstrap": "^0.30.7",
+    "react-data-grid": "^2.0.17",
     "react-dom": "^15.4.2",
     "react-dropzone": "^3.11.0",
     "react-router": "^3.0.2",
