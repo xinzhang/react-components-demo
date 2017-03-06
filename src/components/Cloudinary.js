@@ -48,6 +48,7 @@ class CloudinaryPage  extends React.Component {
         <div className="FileUpload">
           <Dropzone
             onDrop={this.onImageDrop.bind(this)}
+            style={{heigh:"20px", border:"1px"}}
             multiple={true}
             accept="image/*">
             <div>Drop an image or click to select a file to upload.</div>
@@ -61,7 +62,7 @@ class CloudinaryPage  extends React.Component {
             <img src={this.state.uploadedFileCloudinaryUrl} />
           </div>}
         </div>
-        
+
       </form>
     )
   }
