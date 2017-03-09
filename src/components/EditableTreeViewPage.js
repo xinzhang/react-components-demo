@@ -23,6 +23,12 @@ EditableTreeviewPage.tree = {
       name:'desktop',
     },
     {
+      name:'tv',
+    },
+    {
+      name:'console',
+    },
+    {
       name:'laptops',
       status:'collapse',
       subcategories:[{

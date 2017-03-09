@@ -59,6 +59,20 @@ class EditableTreeview extends Component {
     return null;
   }
 
+  addChild(c) {
+    c.status = 'expand';
+    if (!c.subcategories) {
+      c.subcategories = [];
+    }
+
+    c.subcategories.push({
+      name:'',
+      isEdit:true
+    });
+
+    this.setState({});
+  }
+
   renderTree(c){
      return(
        <ul className="treevew-container">
@@ -68,9 +82,13 @@ class EditableTreeview extends Component {
          {c.subcategories && c.subcategories.length > 0 && c.status==="expand" &&
            <i className="glyphicon glyphicon-minus" onClick={()=> this.changestatus(c)}></i>
          }
+
          <li className="node-list" key={c.name}>
             {!c.isEdit &&
-              <div onDoubleClick={()=>this.edit(c)}>{c.name}</div>
+              <div>
+                <div onDoubleClick={()=>this.edit(c)}>{c.name}</div>
+                <button className="btn btn-default" onClick={()=>this.addChild(c)}>add child</button>
+              </div>
             }
             {c.isEdit &&
               <input type="text" defaultValue={c.name} name={c.name} onKeyDown={this.editName} />
