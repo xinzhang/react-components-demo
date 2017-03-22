@@ -76,19 +76,17 @@ class EditableTreeview extends Component {
   renderTree(c){
      return(
        <ul className="treevew-container">
-         {c.subcategories && c.subcategories.length > 0 && c.status==="collapse" &&
-           <i className="glyphicon glyphicon-plus" onClick={() => this.changestatus(c)}></i>
-         }
-         {c.subcategories && c.subcategories.length > 0 && c.status==="expand" &&
-           <i className="glyphicon glyphicon-minus" onClick={()=> this.changestatus(c)}></i>
-         }
-
          <li className="node-list" key={c.name}>
+             {c.subcategories && c.subcategories.length > 0 && c.status==="collapse" &&
+               <i className="glyphicon glyphicon-plus" onClick={() => this.changestatus(c)}></i>
+             }
+             {c.subcategories && c.subcategories.length > 0 && c.status==="expand" &&
+               <i className="glyphicon glyphicon-minus" onClick={()=> this.changestatus(c)}></i>
+             }
             {!c.isEdit &&
-              <div>
-                <div onDoubleClick={()=>this.edit(c)}>{c.name}</div>
-                <button className="btn btn-default" onClick={()=>this.addChild(c)}>add child</button>
-              </div>
+                <span onDoubleClick={()=>this.edit(c)}>{c.name}
+                <i className="glyphicon glyphicon-pencil" onClick={()=>this.addChild(c)}></i>
+                </span>
             }
             {c.isEdit &&
               <input type="text" defaultValue={c.name} name={c.name} onKeyDown={this.editName} />
