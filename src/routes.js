@@ -9,6 +9,7 @@ import GridPage from './components/Grid';
 import CloudinaryPage from './components/Cloudinary';
 import TreeSelectPage from './components/TreeSelectPage';
 import EditableTreeViewPage from './components/EditableTreeViewPage';
+import VideoPage from './components/VideoPage';
 
 export default (
   <Route path="/" component={AppComponent}>
@@ -19,5 +20,6 @@ export default (
     <Route path="treeSelect" component={TreeSelectPage} />
     <Route path="grid" component={GridPage} />
     <Route path="cloudinary" component={CloudinaryPage} />
+    <Route path="video" component={VideoPage} />
   </Route>
 );

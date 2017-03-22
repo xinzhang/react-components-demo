@@ -19,10 +19,18 @@ class HeaderComponent extends Component {
               <li className="active"><a href="/getting-started.html">Getting started</a></li>
               <li><a href="/button">Buttons</a></li>
               <li><a href="/grid">Grid</a></li>
-              <li><a href="/treeview">Treeview</a></li>
-              <li><a href="/editableTreeview">Editable Treeview</a></li>
-              <li><a href="/treeSelect">TreeSelect</a></li>
+              <li className="dropdown">
+                <a className="dropdown-toggle" role="button" href="#" data-toggle="dropdown">
+                  Tree<span className="caret"></span>
+                </a>
+                <ul className="dropdown-menu">
+                  <li><a href="/treeview">Treeview</a></li>
+                  <li><a href="/editableTreeview">Editable Treeview</a></li>
+                  <li><a href="/treeSelect">TreeSelect</a></li>
+                </ul>
+              </li>
               <li><a href="/cloudinary">Cloudinary</a></li>
+              <li><a href="/video">Video</a></li>
             </ul>
           </div>
         </div>
