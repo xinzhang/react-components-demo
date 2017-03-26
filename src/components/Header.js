@@ -29,6 +29,15 @@ class HeaderComponent extends Component {
                   <li><a href="/treeSelect">TreeSelect</a></li>
                 </ul>
               </li>
+              <li className="dropdown">
+                <a className="dropdown-toggle" role="button" href="#" data-toggle="dropdown">
+                  Player<span className="caret"></span>
+                </a>
+                <ul className="dropdown-menu">
+                  <li><a href="/react-player">React-Player</a></li>
+                  <li><a href="/react-html5-video">React-HTML5-VideoPlayer</a></li>
+                </ul>
+              </li>
               <li><a href="/cloudinary">Cloudinary</a></li>
               <li><a href="/video">Video</a></li>
             </ul>
