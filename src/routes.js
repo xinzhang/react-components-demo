@@ -12,12 +12,14 @@ import EditableTreeViewPage from './components/EditableTreeViewPage';
 import VideoPage from './components/VideoPage';
 import ReactPlayerPage from './components/ReactPlayerPage';
 import ReactHtml5VideoPage from './components/ReactHtml5VideoPage';
+import ReactSelect from './components/ReactSelect';
 
 export default (
   <Route path="/" component={AppComponent}>
     <IndexRoute component={HomeComponent} />
     <Route path="button" component={ButtonComponent} />
     <Route path="treeview" component={TreeviewPage} />
+    <Route path="react-select" component={ReactSelect} />
     <Route path="editableTreeview" component={EditableTreeViewPage} />
     <Route path="treeSelect" component={TreeSelectPage} />
     <Route path="grid" component={GridPage} />

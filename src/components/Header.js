@@ -16,9 +16,16 @@ class HeaderComponent extends Component {
           </div>
           <div className="navbar-collapse bs-navbar-collapse collapse">
             <ul className="nav navbar-nav" id="top" role="navigation">
-              <li className="active"><a href="/getting-started.html">Getting started</a></li>
-              <li><a href="/button">Buttons</a></li>
-              <li><a href="/grid">Grid</a></li>
+              <li className="dropdown">
+                <a className="dropdown-toggle" role="button" href="#" data-toggle="dropdown">
+                  UI component<span className="caret"></span>
+                </a>
+                <ul className="dropdown-menu">
+                  <li><a href="/button">Buttons</a></li>
+                  <li><a href="/grid">Grid</a></li>
+                  <li><a href="/react-select">React-Select</a></li>
+                </ul>
+              </li>
               <li className="dropdown">
                 <a className="dropdown-toggle" role="button" href="#" data-toggle="dropdown">
                   Tree<span className="caret"></span>
