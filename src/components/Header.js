@@ -47,6 +47,14 @@ class HeaderComponent extends Component {
               </li>
               <li><a href="/cloudinary">Cloudinary</a></li>
               <li><a href="/video">Video</a></li>
+              <li className="dropdown">
+                <a className="dropdown-toggle" role="button" href="#" data-toggle="dropdown">
+                  Charts<span className="caret"></span>
+                </a>
+                <ul className="dropdown-menu">
+                  <li><a href="/highchart">Highchart</a></li>
+                </ul>
+              </li>
             </ul>
           </div>
         </div>

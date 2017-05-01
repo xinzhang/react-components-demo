@@ -13,6 +13,7 @@ import VideoPage from './components/VideoPage';
 import ReactPlayerPage from './components/ReactPlayerPage';
 import ReactHtml5VideoPage from './components/ReactHtml5VideoPage';
 import ReactSelect from './components/ReactSelect';
+import HighchartPage from './components/HighchartPage';
 
 export default (
   <Route path="/" component={AppComponent}>
@@ -27,5 +28,6 @@ export default (
     <Route path="video" component={VideoPage} />
     <Route path="react-player" component={ReactPlayerPage} />
     <Route path="react-html5-video" component={ReactHtml5VideoPage} />
+    <Route path="highchart" component={HighchartPage} />
   </Route>
 );
