@@ -15,6 +15,7 @@ import ReactHtml5VideoPage from './components/ReactHtml5VideoPage';
 import ReactSelect from './components/ReactSelect';
 import HighchartPage from './components/HighchartPage';
 import PlaceSearchPage from './components/PlaceSearchPage';
+import SlideMenuPage from './components/SlideMenuPage';
 import Map from './components/Map';
 
 export default (
@@ -33,5 +34,6 @@ export default (
     <Route path="highchart" component={HighchartPage} />
     <Route path="placeSearch" component={PlaceSearchPage} />
     <Route path="map" component={() => <Map mapInitialized={() =>{}} />} />
+    <Route path="slideMenu" component={SlideMenuPage} />
   </Route>
 );

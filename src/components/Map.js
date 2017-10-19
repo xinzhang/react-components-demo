@@ -25,8 +25,12 @@ export class Map extends React.PureComponent {
         };
     }
 
-    componentDidMount() {
+    // abcFunc = (props) => {
+    //     console.log(props);
+    // }
 
+    componentDidMount() {
+        //this.abcFunc(this.props);
         this.configureMap();
         //  this.parseChildren(this.props);
     }

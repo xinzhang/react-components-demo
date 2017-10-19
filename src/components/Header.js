@@ -64,6 +64,14 @@ class HeaderComponent extends Component {
                   <li><a href="/map">Google Map</a></li>
                 </ul>
               </li>
+              <li className="dropdown">
+              <a className="dropdown-toggle" role="button" href="#" data-toggle="dropdown">
+                Burger Menu<span className="caret"></span>
+              </a>
+              <ul className="dropdown-menu">
+                <li><a href="/slideMenu">Slide</a></li>
+              </ul>
+            </li>
             </ul>
           </div>
         </div>
