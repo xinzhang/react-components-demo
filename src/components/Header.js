@@ -65,13 +65,21 @@ class HeaderComponent extends Component {
                 </ul>
               </li>
               <li className="dropdown">
-              <a className="dropdown-toggle" role="button" href="#" data-toggle="dropdown">
-                Burger Menu<span className="caret"></span>
-              </a>
-              <ul className="dropdown-menu">
-                <li><a href="/slideMenu">Slide</a></li>
-              </ul>
-            </li>
+                <a className="dropdown-toggle" role="button" href="#" data-toggle="dropdown">
+                  Burger Menu<span className="caret"></span>
+                </a>
+                <ul className="dropdown-menu">
+                  <li><a href="/slideMenu">Slide</a></li>
+                </ul>
+              </li>
+              <li className="dropdown">
+                <a className="dropdown-toggle" role="button" href="#" data-toggle="dropdown">
+                  Animation<span className="caret"></span>
+                </a>
+                <ul className="dropdown-menu">
+                  <li><a href="/animation">Demo</a></li>
+                </ul>
+              </li>
             </ul>
           </div>
         </div>
